@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "cjm-fasthtml-lucide-icons"
+  site-url: "https://cj-mills.github.io/cjm-fasthtml-lucide-icons"
+  description: "Lucide icons as FastHTML SVG components with category/tag registry and factory API."
+  repo-branch: main
+  repo-url: "https://github.com/cj-mills/cjm-fasthtml-lucide-icons"
