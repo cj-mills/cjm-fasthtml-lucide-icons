@@ -5,7 +5,7 @@
 # %% auto #0
 __all__ = ['ICONS']
 
-# %% ../../nbs/registry/icons.ipynb #b016746e
+# %% ../../nbs/registry/icons.ipynb #cebacb44
 from typing import Dict
 
 from cjm_fasthtml_lucide_icons.core import (
@@ -19,7 +19,7 @@ from cjm_fasthtml_lucide_icons.core import (
     PolygonElement,
 )
 
-# %% ../../nbs/registry/icons.ipynb #bbe38bbb
+# %% ../../nbs/registry/icons.ipynb #7eff28da
 # AUTO-GENERATED: Do not edit manually
 # Generated from Lucide icons repository (1667 icons)
 # Run `python scripts/generate_registry.py` to regenerate

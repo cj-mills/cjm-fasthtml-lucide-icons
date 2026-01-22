@@ -5,7 +5,7 @@
 # %% auto #0
 __all__ = ['lucide_icon']
 
-# %% ../nbs/factory.ipynb #e50aa278
+# %% ../nbs/factory.ipynb #c3f242e0
 from fasthtml.common import Svg
 from fasthtml.svg import Path, Circle, Rect, Line, Ellipse, Polyline, Polygon
 
@@ -21,7 +21,7 @@ from cjm_fasthtml_lucide_icons.core import (
     PolygonElement,
 )
 
-# %% ../nbs/factory.ipynb #8a476606
+# %% ../nbs/factory.ipynb #db31e601
 def _build_element(
     element: SvgElement  # element dataclass to convert
 ):  # FastHTML SVG element component
@@ -46,7 +46,7 @@ def _build_element(
     else:
         raise ValueError(f"Unknown element type: {type(element)}")
 
-# %% ../nbs/factory.ipynb #561fe6ff
+# %% ../nbs/factory.ipynb #90ca06f9
 def _build_svg(
     icon_data: IconData,  # icon data containing SVG elements
     size: int = 5,        # Tailwind size scale (default 5 = 20px)
@@ -76,7 +76,7 @@ def _build_svg(
     
     return Svg(*children, **svg_attrs)
 
-# %% ../nbs/factory.ipynb #f601ac02
+# %% ../nbs/factory.ipynb #8e35a661
 def lucide_icon(
     name: str,        # icon name (e.g., "folder", "arrow-up")
     size: int = 5,    # Tailwind size scale (default 5 = 20px)

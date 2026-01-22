@@ -6,14 +6,14 @@
 __all__ = ['list_icons', 'icon_count', 'get_categories', 'category_count', 'search_icons', 'get_tags', 'tag_count',
            'get_icon_categories', 'get_icon_tags']
 
-# %% ../nbs/utils.ipynb #eb951279
+# %% ../nbs/utils.ipynb #3c9840c0
 from typing import List, Optional
 
 from .registry.icons import ICONS
 from .registry.categories import CATEGORIES
 from .registry.tags import TAGS
 
-# %% ../nbs/utils.ipynb #b4737971
+# %% ../nbs/utils.ipynb #cdfbb9a7
 def list_icons(
     category: Optional[str] = None  # filter by category name (optional)
 ) -> List[str]:  # sorted list of icon names
@@ -27,24 +27,24 @@ def list_icons(
     
     return sorted(CATEGORIES[category])
 
-# %% ../nbs/utils.ipynb #4f7556d2
+# %% ../nbs/utils.ipynb #45ff4aec
 def icon_count(
     category: Optional[str] = None  # filter by category name (optional)
 ) -> int:  # number of icons
     """Get the count of available icons, optionally filtered by category."""
     return len(list_icons(category))
 
-# %% ../nbs/utils.ipynb #068e0bbb
+# %% ../nbs/utils.ipynb #96cd2f3c
 def get_categories() -> List[str]:  # sorted list of category names
     """List all available category names."""
     return sorted(CATEGORIES.keys())
 
-# %% ../nbs/utils.ipynb #9b0c1f75
+# %% ../nbs/utils.ipynb #9b8e9660
 def category_count() -> int:  # number of categories
     """Get the count of available categories."""
     return len(CATEGORIES)
 
-# %% ../nbs/utils.ipynb #e3da5e90
+# %% ../nbs/utils.ipynb #b8968273
 def search_icons(
     tag: str  # tag to search for
 ) -> List[str]:  # sorted list of icon names with that tag
@@ -53,17 +53,17 @@ def search_icons(
         return []
     return sorted(TAGS[tag])
 
-# %% ../nbs/utils.ipynb #21d7540e
+# %% ../nbs/utils.ipynb #be0fd9d9
 def get_tags() -> List[str]:  # sorted list of all tags
     """List all available tags."""
     return sorted(TAGS.keys())
 
-# %% ../nbs/utils.ipynb #26bfae8d
+# %% ../nbs/utils.ipynb #c58347ff
 def tag_count() -> int:  # number of tags
     """Get the count of available tags."""
     return len(TAGS)
 
-# %% ../nbs/utils.ipynb #f8e68efc
+# %% ../nbs/utils.ipynb #1877044a
 def get_icon_categories(
     name: str  # icon name
 ) -> List[str]:  # categories the icon belongs to
@@ -72,7 +72,7 @@ def get_icon_categories(
         raise ValueError(f"Unknown icon: '{name}'")
     return sorted(ICONS[name].categories)
 
-# %% ../nbs/utils.ipynb #eb13dbdc
+# %% ../nbs/utils.ipynb #459e3016
 def get_icon_tags(
     name: str  # icon name
 ) -> List[str]:  # tags assigned to the icon

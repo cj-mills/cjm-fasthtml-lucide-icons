@@ -5,10 +5,10 @@
 # %% auto #0
 __all__ = ['TAGS']
 
-# %% ../../nbs/registry/tags.ipynb #a14e9a40
+# %% ../../nbs/registry/tags.ipynb #ca52c7d1
 from typing import Dict, List
 
-# %% ../../nbs/registry/tags.ipynb #9c53945d
+# %% ../../nbs/registry/tags.ipynb #332d4b2e
 # AUTO-GENERATED: Do not edit manually (3349 tags)
 # Run `python scripts/generate_registry.py` to regenerate
 

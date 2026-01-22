@@ -6,17 +6,17 @@
 __all__ = ['SvgElement', 'PathElement', 'CircleElement', 'RectElement', 'LineElement', 'EllipseElement', 'PolylineElement',
            'PolygonElement', 'IconData']
 
-# %% ../nbs/core.ipynb #dba4e2b3
+# %% ../nbs/core.ipynb #475b04fb
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Union
 
-# %% ../nbs/core.ipynb #f986ab15
+# %% ../nbs/core.ipynb #afd45628
 @dataclass
 class PathElement:
     """SVG path element data."""
     d: str  # path data string
 
-# %% ../nbs/core.ipynb #ba899fbe
+# %% ../nbs/core.ipynb #313e8821
 @dataclass
 class CircleElement:
     """SVG circle element data."""
@@ -24,7 +24,7 @@ class CircleElement:
     cy: str  # center y coordinate
     r: str   # radius
 
-# %% ../nbs/core.ipynb #2e6a98ee
+# %% ../nbs/core.ipynb #62d4cf02
 @dataclass
 class RectElement:
     """SVG rect element data."""
@@ -34,7 +34,7 @@ class RectElement:
     height: str         # height
     rx: Optional[str] = None  # corner radius (optional)
 
-# %% ../nbs/core.ipynb #4f4910f9
+# %% ../nbs/core.ipynb #dda40fc8
 @dataclass
 class LineElement:
     """SVG line element data."""
@@ -43,7 +43,7 @@ class LineElement:
     x2: str  # end x
     y2: str  # end y
 
-# %% ../nbs/core.ipynb #e1a7d21f
+# %% ../nbs/core.ipynb #4edc988f
 @dataclass
 class EllipseElement:
     """SVG ellipse element data."""
@@ -52,19 +52,19 @@ class EllipseElement:
     rx: str  # x radius
     ry: str  # y radius
 
-# %% ../nbs/core.ipynb #7450df62
+# %% ../nbs/core.ipynb #dbb98380
 @dataclass
 class PolylineElement:
     """SVG polyline element data."""
     points: str  # space-separated coordinate pairs
 
-# %% ../nbs/core.ipynb #0dfc69dc
+# %% ../nbs/core.ipynb #785c489c
 @dataclass
 class PolygonElement:
     """SVG polygon element data."""
     points: str  # space-separated coordinate pairs
 
-# %% ../nbs/core.ipynb #de8633f8
+# %% ../nbs/core.ipynb #bf8849c4
 # Union type for all SVG elements
 SvgElement = Union[
     PathElement,
@@ -76,7 +76,7 @@ SvgElement = Union[
     PolygonElement
 ]
 
-# %% ../nbs/core.ipynb #f5a6a27b
+# %% ../nbs/core.ipynb #bb27fba0
 @dataclass
 class IconData:
     """Container for a Lucide icon's SVG elements and metadata."""

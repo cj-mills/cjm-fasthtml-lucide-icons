@@ -5,10 +5,10 @@
 # %% auto #0
 __all__ = ['CATEGORIES']
 
-# %% ../../nbs/registry/categories.ipynb #c77c6a49
+# %% ../../nbs/registry/categories.ipynb #36f664c9
 from typing import Dict, List
 
-# %% ../../nbs/registry/categories.ipynb #f338701a
+# %% ../../nbs/registry/categories.ipynb #dcf974d1
 # AUTO-GENERATED: Do not edit manually (43 categories)
 # Run `python scripts/generate_registry.py` to regenerate
 
