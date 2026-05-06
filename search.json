@@ -1,0 +1,248 @@
+[
+  {
+    "objectID": "utils.html",
+    "href": "utils.html",
+    "title": "utils",
+    "section": "",
+    "text": "def list_icons(\n    category:Optional=None, # filter by category name (optional)\n)-&gt;List: # sorted list of icon names\n\nList available icon names, optionally filtered by category.\n\n\n\n\n\ndef icon_count(\n    category:Optional=None, # filter by category name (optional)\n)-&gt;int: # number of icons\n\nGet the count of available icons, optionally filtered by category.",
+    "crumbs": [
+      "utils"
+    ]
+  },
+  {
+    "objectID": "utils.html#icon-listing",
+    "href": "utils.html#icon-listing",
+    "title": "utils",
+    "section": "",
+    "text": "def list_icons(\n    category:Optional=None, # filter by category name (optional)\n)-&gt;List: # sorted list of icon names\n\nList available icon names, optionally filtered by category.\n\n\n\n\n\ndef icon_count(\n    category:Optional=None, # filter by category name (optional)\n)-&gt;int: # number of icons\n\nGet the count of available icons, optionally filtered by category.",
+    "crumbs": [
+      "utils"
+    ]
+  },
+  {
+    "objectID": "utils.html#category-listing",
+    "href": "utils.html#category-listing",
+    "title": "utils",
+    "section": "Category Listing",
+    "text": "Category Listing\n\n\nget_categories\n\ndef get_categories(\n    \n)-&gt;List: # sorted list of category names\n\nList all available category names.\n\n\n\ncategory_count\n\ndef category_count(\n    \n)-&gt;int: # number of categories\n\nGet the count of available categories.",
+    "crumbs": [
+      "utils"
+    ]
+  },
+  {
+    "objectID": "utils.html#tag-search",
+    "href": "utils.html#tag-search",
+    "title": "utils",
+    "section": "Tag Search",
+    "text": "Tag Search\n\n\nsearch_icons\n\ndef search_icons(\n    tag:str, # tag to search for\n)-&gt;List: # sorted list of icon names with that tag\n\nSearch for icons by tag.\n\n\n\nget_tags\n\ndef get_tags(\n    \n)-&gt;List: # sorted list of all tags\n\nList all available tags.\n\n\n\ntag_count\n\ndef tag_count(\n    \n)-&gt;int: # number of tags\n\nGet the count of available tags.",
+    "crumbs": [
+      "utils"
+    ]
+  },
+  {
+    "objectID": "utils.html#icon-metadata",
+    "href": "utils.html#icon-metadata",
+    "title": "utils",
+    "section": "Icon Metadata",
+    "text": "Icon Metadata\n\n\nget_icon_categories\n\ndef get_icon_categories(\n    name:str, # icon name\n)-&gt;List: # categories the icon belongs to\n\nGet the categories an icon belongs to.\n\n\n\nget_icon_tags\n\ndef get_icon_tags(\n    name:str, # icon name\n)-&gt;List: # tags assigned to the icon\n\nGet the tags assigned to an icon.",
+    "crumbs": [
+      "utils"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "Dataclasses representing the different SVG element types used in Lucide icons.\n\n\n\n\ndef PathElement(\n    d:str\n)-&gt;None:\n\nSVG path element data.\n\n\n\n\n\ndef CircleElement(\n    cx:str, cy:str, r:str\n)-&gt;None:\n\nSVG circle element data.\n\n\n\n\n\ndef RectElement(\n    x:str, y:str, width:str, height:str, rx:Optional=None\n)-&gt;None:\n\nSVG rect element data.\n\n\n\n\n\ndef LineElement(\n    x1:str, y1:str, x2:str, y2:str\n)-&gt;None:\n\nSVG line element data.\n\n\n\n\n\ndef EllipseElement(\n    cx:str, cy:str, rx:str, ry:str\n)-&gt;None:\n\nSVG ellipse element data.\n\n\n\n\n\ndef PolylineElement(\n    points:str\n)-&gt;None:\n\nSVG polyline element data.\n\n\n\n\n\ndef PolygonElement(\n    points:str\n)-&gt;None:\n\nSVG polygon element data.",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "core.html#svg-element-types",
+    "href": "core.html#svg-element-types",
+    "title": "core",
+    "section": "",
+    "text": "Dataclasses representing the different SVG element types used in Lucide icons.\n\n\n\n\ndef PathElement(\n    d:str\n)-&gt;None:\n\nSVG path element data.\n\n\n\n\n\ndef CircleElement(\n    cx:str, cy:str, r:str\n)-&gt;None:\n\nSVG circle element data.\n\n\n\n\n\ndef RectElement(\n    x:str, y:str, width:str, height:str, rx:Optional=None\n)-&gt;None:\n\nSVG rect element data.\n\n\n\n\n\ndef LineElement(\n    x1:str, y1:str, x2:str, y2:str\n)-&gt;None:\n\nSVG line element data.\n\n\n\n\n\ndef EllipseElement(\n    cx:str, cy:str, rx:str, ry:str\n)-&gt;None:\n\nSVG ellipse element data.\n\n\n\n\n\ndef PolylineElement(\n    points:str\n)-&gt;None:\n\nSVG polyline element data.\n\n\n\n\n\ndef PolygonElement(\n    points:str\n)-&gt;None:\n\nSVG polygon element data.",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "core.html#icon-data-container",
+    "href": "core.html#icon-data-container",
+    "title": "core",
+    "section": "Icon Data Container",
+    "text": "Icon Data Container\n\n\nIconData\n\ndef IconData(\n    elements:List, categories:List=&lt;factory&gt;, tags:List=&lt;factory&gt;\n)-&gt;None:\n\nContainer for a Lucide icon’s SVG elements and metadata.",
+    "crumbs": [
+      "core"
+    ]
+  },
+  {
+    "objectID": "registry/tags.html",
+    "href": "registry/tags.html",
+    "title": "registry.tags",
+    "section": "",
+    "text": "Maps tags to lists of icon names with that tag.",
+    "crumbs": [
+      "registry",
+      "registry.tags"
+    ]
+  },
+  {
+    "objectID": "registry/tags.html#tag-index",
+    "href": "registry/tags.html#tag-index",
+    "title": "registry.tags",
+    "section": "",
+    "text": "Maps tags to lists of icon names with that tag.",
+    "crumbs": [
+      "registry",
+      "registry.tags"
+    ]
+  },
+  {
+    "objectID": "registry/categories.html",
+    "href": "registry/categories.html",
+    "title": "registry.categories",
+    "section": "",
+    "text": "Maps category names to lists of icon names in that category.",
+    "crumbs": [
+      "registry",
+      "registry.categories"
+    ]
+  },
+  {
+    "objectID": "registry/categories.html#category-index",
+    "href": "registry/categories.html#category-index",
+    "title": "registry.categories",
+    "section": "",
+    "text": "Maps category names to lists of icon names in that category.",
+    "crumbs": [
+      "registry",
+      "registry.categories"
+    ]
+  },
+  {
+    "objectID": "registry/icons.html",
+    "href": "registry/icons.html",
+    "title": "registry.icons",
+    "section": "",
+    "text": "Maps icon names to their IconData containing SVG elements and metadata.",
+    "crumbs": [
+      "registry",
+      "registry.icons"
+    ]
+  },
+  {
+    "objectID": "registry/icons.html#icon-registry",
+    "href": "registry/icons.html#icon-registry",
+    "title": "registry.icons",
+    "section": "",
+    "text": "Maps icon names to their IconData containing SVG elements and metadata.",
+    "crumbs": [
+      "registry",
+      "registry.icons"
+    ]
+  },
+  {
+    "objectID": "factory.html",
+    "href": "factory.html",
+    "title": "factory",
+    "section": "",
+    "text": "Internal functions that convert element dataclasses to FastHTML components.",
+    "crumbs": [
+      "factory"
+    ]
+  },
+  {
+    "objectID": "factory.html#element-builders",
+    "href": "factory.html#element-builders",
+    "title": "factory",
+    "section": "",
+    "text": "Internal functions that convert element dataclasses to FastHTML components.",
+    "crumbs": [
+      "factory"
+    ]
+  },
+  {
+    "objectID": "factory.html#svg-builder",
+    "href": "factory.html#svg-builder",
+    "title": "factory",
+    "section": "SVG Builder",
+    "text": "SVG Builder",
+    "crumbs": [
+      "factory"
+    ]
+  },
+  {
+    "objectID": "factory.html#main-factory-function",
+    "href": "factory.html#main-factory-function",
+    "title": "factory",
+    "section": "Main Factory Function",
+    "text": "Main Factory Function\n\n\nlucide_icon\n\ndef lucide_icon(\n    name:str, # icon name (e.g., \"folder\", \"arrow-up\")\n    size:int=5, # Tailwind size scale (default 5 = 20px)\n    cls:str=None, # additional CSS classes (e.g., daisyUI colors)\n    kwargs:VAR_KEYWORD\n)-&gt;functools.partial(&lt;function ft at 0x7f25a5665f80&gt;, 'svg', void_=False): # FastHTML Svg component\n\nGet a Lucide icon as a FastHTML Svg component.",
+    "crumbs": [
+      "factory"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "",
+    "text": "pip install cjm_fasthtml_lucide_icons",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "",
+    "text": "pip install cjm_fasthtml_lucide_icons",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  },
+  {
+    "objectID": "index.html#project-structure",
+    "href": "index.html#project-structure",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "Project Structure",
+    "text": "Project Structure\nnbs/\n├── registry/ (3)\n│   ├── categories.ipynb  # Auto-generated category index for Lucide icons.\n│   ├── icons.ipynb       # Auto-generated registry of Lucide icon data.\n│   └── tags.ipynb        # Auto-generated tag index for Lucide icons.\n├── core.ipynb     # Data structures for representing Lucide icon elements and metadata.\n├── factory.ipynb  # SVG factory function for building FastHTML Lucide icon components.\n└── utils.ipynb    # Discovery utilities for browsing and searching available Lucide icons.\nTotal: 6 notebooks across 1 directory",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  },
+  {
+    "objectID": "index.html#module-dependencies",
+    "href": "index.html#module-dependencies",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "Module Dependencies",
+    "text": "Module Dependencies\ngraph LR\n    core[core&lt;br/&gt;core]\n    factory[factory&lt;br/&gt;factory]\n    registry_categories[registry.categories&lt;br/&gt;registry.categories]\n    registry_icons[registry.icons&lt;br/&gt;registry.icons]\n    registry_tags[registry.tags&lt;br/&gt;registry.tags]\n    utils[utils&lt;br/&gt;utils]\n\n    factory --&gt; core\n    registry_icons --&gt; core\n    utils --&gt; registry_icons\n    utils --&gt; registry_tags\n    utils --&gt; registry_categories\n5 cross-module dependencies detected",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  },
+  {
+    "objectID": "index.html#cli-reference",
+    "href": "index.html#cli-reference",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "CLI Reference",
+    "text": "CLI Reference\nNo CLI commands found in this project.",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  },
+  {
+    "objectID": "index.html#module-overview",
+    "href": "index.html#module-overview",
+    "title": "cjm-fasthtml-lucide-icons",
+    "section": "Module Overview",
+    "text": "Module Overview\nDetailed documentation for each module in the project:\n\nregistry.categories (categories.ipynb)\n\nAuto-generated category index for Lucide icons.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.registry.categories import (\n    CATEGORIES\n)\n\n\nVariables\nCATEGORIES: Dict[str, List[str]]\n\n\n\ncore (core.ipynb)\n\nData structures for representing Lucide icon elements and metadata.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.core import (\n    SvgElement,\n    PathElement,\n    CircleElement,\n    RectElement,\n    LineElement,\n    EllipseElement,\n    PolylineElement,\n    PolygonElement,\n    IconData\n)\n\n\nClasses\n@dataclass\nclass PathElement:\n    \"SVG path element data.\"\n    \n    d: str  # path data string\n@dataclass\nclass CircleElement:\n    \"SVG circle element data.\"\n    \n    cx: str  # center x coordinate\n    cy: str  # center y coordinate\n    r: str  # radius\n@dataclass\nclass RectElement:\n    \"SVG rect element data.\"\n    \n    x: str  # x position\n    y: str  # y position\n    width: str  # width\n    height: str  # height\n    rx: Optional[str]  # corner radius (optional)\n@dataclass\nclass LineElement:\n    \"SVG line element data.\"\n    \n    x1: str  # start x\n    y1: str  # start y\n    x2: str  # end x\n    y2: str  # end y\n@dataclass\nclass EllipseElement:\n    \"SVG ellipse element data.\"\n    \n    cx: str  # center x coordinate\n    cy: str  # center y coordinate\n    rx: str  # x radius\n    ry: str  # y radius\n@dataclass\nclass PolylineElement:\n    \"SVG polyline element data.\"\n    \n    points: str  # space-separated coordinate pairs\n@dataclass\nclass PolygonElement:\n    \"SVG polygon element data.\"\n    \n    points: str  # space-separated coordinate pairs\n@dataclass\nclass IconData:\n    \"Container for a Lucide icon's SVG elements and metadata.\"\n    \n    elements: List[SvgElement]  # SVG child elements\n    categories: List[str] = field(...)  # category assignments\n    tags: List[str] = field(...)  # searchable tags\n\n\n\nfactory (factory.ipynb)\n\nSVG factory function for building FastHTML Lucide icon components.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.factory import (\n    lucide_icon\n)\n\n\nFunctions\ndef _build_element(\n    element: SvgElement  # element dataclass to convert\n):  # FastHTML SVG element component\n    \"Convert an element dataclass to a FastHTML SVG component.\"\ndef _build_svg(\n    icon_data: IconData,  # icon data containing SVG elements\n    size: int = 5,        # Tailwind size scale (default 5 = 20px)\n    cls: str = None,      # additional CSS classes\n    **kwargs              # additional SVG attributes\n) -&gt; Svg:  # FastHTML Svg component\n    \"Build a FastHTML Svg component from IconData.\"\ndef lucide_icon(\n    name: str,        # icon name (e.g., \"folder\", \"arrow-up\")\n    size: int = 5,    # Tailwind size scale (default 5 = 20px)\n    cls: str = None,  # additional CSS classes (e.g., daisyUI colors)\n    **kwargs          # additional SVG attributes\n) -&gt; Svg:  # FastHTML Svg component\n    \"Get a Lucide icon as a FastHTML Svg component.\"\n\n\n\nregistry.icons (icons.ipynb)\n\nAuto-generated registry of Lucide icon data.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.registry.icons import (\n    ICONS\n)\n\n\nVariables\nICONS: Dict[str, IconData]\n\n\n\nregistry.tags (tags.ipynb)\n\nAuto-generated tag index for Lucide icons.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.registry.tags import (\n    TAGS\n)\n\n\nVariables\nTAGS: Dict[str, List[str]]\n\n\n\nutils (utils.ipynb)\n\nDiscovery utilities for browsing and searching available Lucide icons.\n\n\nImport\nfrom cjm_fasthtml_lucide_icons.utils import (\n    list_icons,\n    icon_count,\n    get_categories,\n    category_count,\n    search_icons,\n    get_tags,\n    tag_count,\n    get_icon_categories,\n    get_icon_tags\n)\n\n\nFunctions\ndef list_icons(\n    category: Optional[str] = None  # filter by category name (optional)\n) -&gt; List[str]:  # sorted list of icon names\n    \"List available icon names, optionally filtered by category.\"\ndef icon_count(\n    category: Optional[str] = None  # filter by category name (optional)\n) -&gt; int:  # number of icons\n    \"Get the count of available icons, optionally filtered by category.\"\ndef get_categories() -&gt; List[str]:  # sorted list of category names\n    \"List all available category names.\"\ndef category_count() -&gt; int:  # number of categories\n    \"Get the count of available categories.\"\ndef search_icons(\n    tag: str  # tag to search for\n) -&gt; List[str]:  # sorted list of icon names with that tag\n    \"Search for icons by tag.\"\ndef get_tags() -&gt; List[str]:  # sorted list of all tags\n    \"List all available tags.\"\ndef tag_count() -&gt; int:  # number of tags\n    \"Get the count of available tags.\"\ndef get_icon_categories(\n    name: str  # icon name\n) -&gt; List[str]:  # categories the icon belongs to\n    \"Get the categories an icon belongs to.\"\ndef get_icon_tags(\n    name: str  # icon name\n) -&gt; List[str]:  # tags assigned to the icon\n    \"Get the tags assigned to an icon.\"",
+    "crumbs": [
+      "cjm-fasthtml-lucide-icons"
+    ]
+  }
+]
